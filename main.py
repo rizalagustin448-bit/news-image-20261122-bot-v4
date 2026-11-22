@@ -420,8 +420,8 @@ def build():
         draw_text(cv, kicker, x0 + 12, y0 + 13, 2, accent, bold=True)
         scene(cv, x0 + 12, y0 + 32)
         # Headlines enlarged ~17% (scale 3.5), navy bold, 2 lines.
-        draw_text(cv, head[0], x0 + 12, y0 + 112, 3.5, NAVY, bold=True)
-        draw_text(cv, head[1], x0 + 12, y0 + 138, 3.5, NAVY, bold=True)
+        draw_text(cv, head[0], x0 + 12, y0 + 112, 3.6, NAVY, bold=True)
+        draw_text(cv, head[1], x0 + 12, y0 + 138, 3.6, NAVY, bold=True)
         # Deck: one short sentence, max 2 lines, grey.
         for li, ln in enumerate(wrap(deck, 2, 306)):
             draw_text(cv, ln, x0 + 12, y0 + 170 + li * 15, 2, GREY)
